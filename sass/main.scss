@@ -1,0 +1,60 @@
+$black: #000000;
+$white: #FFFFFF;
+$orange: #F09A38;
+$gray--dark: #333333;
+$gray--light: #A5A5A5;
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: $black;
+  font-size: 30px;
+}
+
+.calculator {
+  width: 300px;
+  margin: 50px auto;
+  font-size: 30px;
+  color: $white;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-weight: normal;
+  overflow: auto;
+}
+
+.display {
+  width: 100%;
+  text-align: right;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.button {
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  margin: 5px;
+  color: $white;
+  background: $gray--dark;
+  border: none;
+  position: relative;
+  float: left;
+  font-size: 28px;
+  
+  &--secondary {
+    background: $gray--light;
+  }
+  
+  &--operation {
+    background: $orange;
+  }
+  
+  &--double {
+    width: 140px;
+    border-radius: 30px;
+  }
+}
+
+* {
+  &:focus {
+    outline: none;
+  }
+}
